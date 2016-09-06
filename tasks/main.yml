@@ -1,0 +1,6 @@
+---
+- name: Install the latest stable Pandoc via Homebrew
+  package:
+    name: pandoc
+    state: latest
+  when: ansible_os_family == "Darwin"
